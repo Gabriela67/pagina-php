@@ -1,0 +1,18 @@
+let myFunction = function (){
+console.log(this)
+console.log(hola)
+
+};
+
+myFunction = {};
+var myObject = {};
+myObject.myMethod = function (){
+    console.log(this)
+};
+
+var nav = document.querySelector('.nav');
+var toglleNav = function(){
+    console.log(this)
+};
+
+nav.addEventListener('click',toglleNav , false)
